@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<title>Demo</title>
+</head>
+<body>
+<a href="cam.html">Camera</a><br/><br/>
+<button id="RunIt">Run It</button>
+<button id="ClearIt">Clear</button>
+<div id="Results"></div>
+<script src="js/zepto.min.js"></script>
+<script src="js/demo.js"></script>
+<script>
+$("#RunIt").click(function(){
+	DEMO.RunIt($("#Results"));
+});
+$("#ClearIt").click(function(){
+	$("#Results").html("");
+});
+</script>
+</body>
+</html>
